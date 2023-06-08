@@ -1,0 +1,52 @@
+
+body {
+    margin: 0;
+}
+html {
+    font-family: 'Poppins', sans-serif;
+    color: #6300a2;
+}           
+header { 
+    float: left;
+    font-size: 40px;
+    width: 100%;
+    background-color: #b8ffb8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 0 20px 20px;
+} 
+nav{
+    float: right;
+    padding-right: 40px;
+}
+
+main {
+    width: 720px;
+    margin: 150px auto 0 auto;
+    min-height: 900px;
+}
+
+footer {
+    background-color: #ffca88;
+    width: 100%;
+    padding: 10px;
+}
+
+footer ul {
+    list-style: none;
+    font-size: 40px;
+}
+
+img {
+    width: 60%;
+    height: auto;
+    float: right;
+}
+
+#form { 
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}

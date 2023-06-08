@@ -1,20 +1,17 @@
-const form = document.querySelector("#form")
-const submitButton = document.querySelector("#submit")
-const scriptURL = 'https://script.google.com/macros/s/1XTaVdkdAnzhAHoLOA-x0K4svtJOB9RUnp2OgudFCNoEE4Lo8muDKOgSO/exec'
-
-form.addEventListener('submit', e => {
-  submitButton.disabled = true
-  e.preventDefault()
-  let requestBody = new FormData(form)
-  fetch(scriptURL, { method: 'POST', body: requestBody})
-    .then(response => {
-       alert('Success!', response)
-       submitButton.disabled = false
-      })
-    .catch(error => {
-    alert('Error!', error.message)
-      submitButton.disabled = false
-
-    }
-    )
-})
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <form id="form">
+    <input type="text" value="First Name"/>
+    <input type="text" value="Last Name"/>
+    <input type="text" value="Email"/>
+    <input type="submit" value="Submit">
+  </form> 
+</body>
+</html>
